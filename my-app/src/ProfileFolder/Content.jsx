@@ -3,18 +3,25 @@ import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
-import RadarChart from "../Graphs/RadarChart";
-import PieWithLabel from "../Graphs/PieWithLabel";
-import Divider from "@material-ui/core/Divider";
+
+import  Divider from "@material-ui/core/Divider";
 import React, { useState } from "react";
-import { Text, Heading } from "rebass";
 import { makeStyles } from "@material-ui/core/styles";
 import AvatarGroup from "@material-ui/lab/AvatarGroup";
 import FriendsAvatarList from "./FriendsAvatarList";
 import { useContext } from "react";
-import { SemContext } from "../../SemContext";
+import { SemContext } from "../SemContext";
+import FaceIcon from '@material-ui/icons/Face';
+import BottomAppBar from "../BottomBar";
+import ChipSet from '../ChipSet';
+import SocialCard from "../SocialCard";
+import UserChip from '../UserChip'
 
 const useStyles = makeStyles((theme) => ({
+  divider: {
+    color : 'black',
+    // background,color : 'black'
+    },
   root: {
     display: "flex",
     "& > *": {
@@ -33,47 +40,60 @@ const useStyles = makeStyles((theme) => ({
 
 function Content(props) {
   const classes = useStyles();
-  const [authInfo , setAuthInfo] = useContext(SemContext)
+  // const [authInfo , setAuthInfo] = useContext(SemContext)
   return (
     <Container>
+      <BottomAppBar></BottomAppBar>
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <div className="headingdiv">
             <p className="HomeTitleSmall">HEY WHATS UP,</p>
-            <p className="HomeTitle">{authInfo.displayName}</p>
+            <p className="HomeTitle">{props.Name}</p>
           </div>
 
-          <Divider />
+         <Divider className={classes.divider}></Divider>
+         {/* change to black divider */}
           <div className="statsdiv">
-            <p className="HomeTitleMedium">LAST SIGN IN</p>
-            <p>{authInfo.lastSignInTime}</p>
-            {/* FIX */}
-            <p className="HomeTitleMedium">MEMBER SINCE</p>
-            <p>{authInfo.creationTime}</p>
-            <p className="HomeTitleMedium">HOURS LOGGED</p>
-            <p>{props.HoursLogged}</p>
-            <p className="HomeTitleMedium">CHECKLIST TASKS COMPLETED</p>
-            <p>{props.TasksCompleted}</p>
+           <p className='HomeTitleMedium'> Social Media</p>
           </div>
           <br></br>
           <br></br>
-          <br></br>
-          <Divider />
 
-          <div className="statsdiv"></div>
+          <SocialCard></SocialCard>
+          <br></br>
+         <Divider className={classes.divider}></Divider>
+
+          <div className="statsdiv">
+            
+<p className='HomeTitleMedium'>Connect With</p>
+<br></br>
+<br></br>
+<div className='chipset'>
+<UserChip></UserChip>
+<br></br>
+</div>
+
+            </div>
         </Grid>
         <Grid item xs={6}>
           <div className="avatardiv">
-            <Avatar className={classes.large} src={authInfo.photoURL}>
-              H
+            {/* <Avatar className={classes.large} src={props.photoURL}>
+              <FaceIcon></FaceIcon>
             </Avatar>
+            <br/>
+<br/> */}
+            <div className='flexbox'>
+
+<ChipSet></ChipSet>
+
+            </div>
 
             <div className="friendsdiv">
               <div className="justifycenter">
-                <Divider></Divider>
+                <Divider className={classes.divider}></Divider>
 
                 <p className="SubHeading">ALL FRIENDS</p>
-                <Divider></Divider>
+                <Divider className={classes.divider}></Divider>
                 <br></br>
                 <Button>Add Friends</Button>
               </div>
@@ -93,10 +113,10 @@ function Content(props) {
         <p className="HomeTitleSmall">PERSONAL BLEND</p>
         <Grid container spacing={3}>
           <Grid item xs>
-            <PieWithLabel></PieWithLabel>
+            {/* <PieWithLabel></PieWithLabel> */}
           </Grid>
           <Grid item xs>
-            <RadarChart></RadarChart>
+            {/* <RadarChart></RadarChart> */}
           </Grid>
         </Grid>
       </Container>
