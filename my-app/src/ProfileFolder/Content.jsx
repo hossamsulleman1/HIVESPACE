@@ -61,7 +61,7 @@ function Content(props) {
 
           <SocialCard></SocialCard>
           <br></br>
-         <Divider className={classes.divider}></Divider>
+         {/* <Divider className={classes.divider}></Divider> */}
 
           <div className="statsdiv">
             

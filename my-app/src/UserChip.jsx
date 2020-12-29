@@ -35,7 +35,7 @@ export default function UserChip() {
   };
 
   return (
-    <Paper component="ul" elevation={0} className={classes.root}>
+    <div component="ul" elevation={0} className={classes.root}>
       {chipData.map((data) => {
         let icon;
 
@@ -48,9 +48,9 @@ export default function UserChip() {
             <Chip
 variant="outlined"
 icon={<FaceIcon />}
-color="primary"
+// color="primary"
 
-              icon={icon}
+              // icon={icon}
               label={data.label}
               onDelete={data.label === 'React' ? undefined : handleDelete(data)}
               className={classes.chip}
@@ -58,6 +58,6 @@ color="primary"
           </li>
         );
       })}
-    </Paper>
+    </div>
   );
 }
