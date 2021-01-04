@@ -11,6 +11,8 @@ import instagramIcon from '@iconify-icons/simple-icons/instagram';
 import discordIcon from '@iconify-icons/simple-icons/discord';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
 
 
 
@@ -21,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
   },
   social: {
     width: '100px;',
-  height: '100px;'
+  height: '100px;',
+  paddingRight: 5
   },
   paper: {
     padding: theme.spacing(2),
@@ -38,11 +41,11 @@ const useStyles = makeStyles((theme) => ({
   function FormRow() {
     return (
       <React.Fragment>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
 
-<Fab size='large' color="secondary" aria-label="add" className={classes.social}>
-          <AddIcon />
-        </Fab>
+<SocialIcon url="https://instagram.com/placeholder810?r=nametag" />
+
+
 
           {/* <Paper className={classes.paper}>
         <p className='SubHeading'>LinkedIn</p>
@@ -54,11 +57,10 @@ const useStyles = makeStyles((theme) => ({
 
     
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
 
-<Fab size='large' color="secondary" aria-label="add" className={classes.social}>
-          <AddIcon />
-        </Fab>
+
+        <SocialIcon url="https://www.snapchat.com/add/placeholder810" />
 
         {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Discord</p>
@@ -68,11 +70,9 @@ const useStyles = makeStyles((theme) => ({
 </div> */}
     {/* </Paper> */}
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
 
-<Fab size='large' color="secondary" aria-label="add" className={classes.social}>
-          <AddIcon />
-        </Fab>
+<SocialIcon url="https://www.linkedin.com/in/hossam-sulleman-42712217a/" />
 
         {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Instagram</p>
@@ -82,11 +82,9 @@ const useStyles = makeStyles((theme) => ({
 </div>
     </Paper> */}
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
 
-<Fab size='large' color="secondary" aria-label="add" className={classes.social}>
-          <AddIcon />
-        </Fab>
+<SocialIcon url="https://www.instagram.com/hs.su017/" bgColor="#ff5a01" />
 
         {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Snapchat</p>
@@ -96,11 +94,9 @@ const useStyles = makeStyles((theme) => ({
 </div>
     </Paper> */}
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
 
-<Fab size='large' color="secondary" aria-label="add" className={classes.social}>
-          <AddIcon />
-        </Fab>
+<SocialIcon url="https://github.com/hossamsulleman1" />
 
         {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
@@ -111,11 +107,9 @@ const useStyles = makeStyles((theme) => ({
     </Paper> */}
     
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
 
-<Fab size='large' color="secondary" aria-label="add" className={classes.social}>
-          <AddIcon />
-        </Fab>
+<SocialIcon url="https://www.youtube.com/channel/UCs-z4pyYHo9qXJxgWtYfSCQ" />
 
         {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
@@ -126,6 +120,65 @@ const useStyles = makeStyles((theme) => ({
     </Paper> */}
     
         </Grid>
+
+        <Grid item xs={2}>
+
+{/* <SocialIcon url="m.me/kitchwa.kubwa" /> */}
+
+        {/* <Paper className={classes.paper}>
+        <p className='SubHeading'>Facebook</p>
+        <div className='floatright'>
+            
+        <Icon icon={facebookIcon} />
+</div>
+    </Paper> */}
+    
+        </Grid>
+
+        <Grid item xs={2}>
+
+{/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
+
+        {/* <Paper className={classes.paper}>
+        <p className='SubHeading'>Facebook</p>
+        <div className='floatright'>
+            
+        <Icon icon={facebookIcon} />
+</div>
+    </Paper> */}
+    
+        </Grid>
+
+        <Grid item xs={2}>
+
+{/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
+
+        {/* <Paper className={classes.paper}>
+        <p className='SubHeading'>Facebook</p>
+        <div className='floatright'>
+            
+        <Icon icon={facebookIcon} />
+</div>
+    </Paper> */}
+    
+        </Grid>
+
+        <Grid item xs={2}>
+
+{/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
+
+        {/* <Paper className={classes.paper}>
+        <p className='SubHeading'>Facebook</p>
+        <div className='floatright'>
+            
+        <Icon icon={facebookIcon} />
+</div>
+    </Paper> */}
+    
+        </Grid>
+
+
+
 
       </React.Fragment>
     );
@@ -133,8 +186,8 @@ const useStyles = makeStyles((theme) => ({
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid container item xs={12} spacing={3}>
+      <Grid container spacing={5}>
+        <Grid container item xs={12} spacing={5}>
           <FormRow />
         </Grid>
         {/* <Grid container item xs={12} spacing={3}>
