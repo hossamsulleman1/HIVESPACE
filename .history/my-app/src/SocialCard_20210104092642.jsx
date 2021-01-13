@@ -1,39 +1,46 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import { Icon, InlineIcon } from "@iconify/react";
-import Fab from "@material-ui/core/Fab";
-import AddIcon from "@material-ui/icons/Add";
-import ReactDOM from "react-dom";
-import { SocialIcon } from "react-social-icons";
+ 
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import { Icon, InlineIcon } from '@iconify/react';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
+
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   social: {
-    width: "100px;",
-    height: "100px;",
-    paddingRight: 5,
+    width: '100px;',
+  height: '100px;',
+  paddingRight: 5
   },
   paper: {
     padding: theme.spacing(2),
-    width: "180px",
-    height: "90px",
+    width : '180px',
+    height : '90px',
     // textAlign: 'center',
     color: theme.palette.text.secondary,
   },
 }));
 
-function SocialCard() {
+ function SocialCard() {
   const classes = useStyles();
 
   function FormRow() {
     return (
       <React.Fragment>
         <Grid item xs={2}>
-          <SocialIcon url="https://instagram.com/placeholder810?r=nametag" />
+
+<SocialIcon url="https://instagram.com/placeholder810?r=nametag" />
+
+
 
           {/* <Paper className={classes.paper}>
         <p className='SubHeading'>LinkedIn</p>
@@ -42,22 +49,27 @@ function SocialCard() {
         <Icon icon={linkedinIcon} />
 </div>
     </Paper> */}
+
+    
         </Grid>
         <Grid item xs={2}>
-          <SocialIcon url="https://www.snapchat.com/add/placeholder810" />
 
-          {/* <Paper className={classes.paper}>
+
+        <SocialIcon url="https://www.snapchat.com/add/placeholder810" />
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Discord</p>
         <div className='floatright'>
             
         <Icon icon={discordIcon} />
 </div> */}
-          {/* </Paper> */}
+    {/* </Paper> */}
         </Grid>
         <Grid item xs={2}>
-          <SocialIcon url="https://www.linkedin.com/in/hossam-sulleman-42712217a/" />
 
-          {/* <Paper className={classes.paper}>
+<SocialIcon url="https://www.linkedin.com/in/hossam-sulleman-42712217a/" />
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Instagram</p>
         <div className='floatright'>
             
@@ -66,12 +78,10 @@ function SocialCard() {
     </Paper> */}
         </Grid>
         <Grid item xs={2}>
-          <SocialIcon
-            url="https://www.instagram.com/hs.su017/"
-            bgColor="#ff5a01"
-          />
 
-          {/* <Paper className={classes.paper}>
+<SocialIcon url="https://www.instagram.com/hs.su017/" bgColor="#ff5a01" />
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Snapchat</p>
         <div className='floatright'>
             
@@ -80,75 +90,91 @@ function SocialCard() {
     </Paper> */}
         </Grid>
         <Grid item xs={2}>
-          <SocialIcon url="https://github.com/hossamsulleman1" />
 
-          {/* <Paper className={classes.paper}>
+<SocialIcon url="https://github.com/hossamsulleman1" />
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
         <div className='floatright'>
             
         <Icon icon={facebookIcon} />
 </div>
     </Paper> */}
+    
         </Grid>
         <Grid item xs={2}>
-          <SocialIcon url="https://www.youtube.com/channel/UCs-z4pyYHo9qXJxgWtYfSCQ" />
 
-          {/* <Paper className={classes.paper}>
+<SocialIcon url="https://www.youtube.com/channel/UCs-z4pyYHo9qXJxgWtYfSCQ" />
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
         <div className='floatright'>
             
         <Icon icon={facebookIcon} />
 </div>
     </Paper> */}
-        </Grid>
-
-        <Grid item xs={2}>
-          <SocialIcon url="https://soundcloud.com/jhb-bbf" />
-
-          {/* <Paper className={classes.paper}>
-        <p className='SubHeading'>Facebook</p>
-        <div className='floatright'>
-            
-        <Icon icon={facebookIcon} />
-</div>
-    </Paper> */}
+    
         </Grid>
 
         <Grid item xs={2}>
-          {/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
 
-          {/* <Paper className={classes.paper}>
+{/* <SocialIcon url="m.me/kitchwa.kubwa" /> */}
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
         <div className='floatright'>
             
         <Icon icon={facebookIcon} />
 </div>
     </Paper> */}
+    
         </Grid>
 
         <Grid item xs={2}>
-          {/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
 
-          {/* <Paper className={classes.paper}>
+{/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
         <div className='floatright'>
             
         <Icon icon={facebookIcon} />
 </div>
     </Paper> */}
+    
         </Grid>
 
         <Grid item xs={2}>
-          {/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
 
-          {/* <Paper className={classes.paper}>
+{/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
+
+        {/* <Paper className={classes.paper}>
         <p className='SubHeading'>Facebook</p>
         <div className='floatright'>
             
         <Icon icon={facebookIcon} />
 </div>
     </Paper> */}
+    
         </Grid>
+
+        <Grid item xs={2}>
+
+{/* <SocialIcon url="http://linkedin.com/in/jaketrent" /> */}
+
+        {/* <Paper className={classes.paper}>
+        <p className='SubHeading'>Facebook</p>
+        <div className='floatright'>
+            
+        <Icon icon={facebookIcon} />
+</div>
+    </Paper> */}
+    
+        </Grid>
+
+
+
+
       </React.Fragment>
     );
   }
@@ -179,4 +205,6 @@ function SocialCard() {
   );
 }
 
+
 export default SocialCard;
+
