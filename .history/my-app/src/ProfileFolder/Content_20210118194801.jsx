@@ -50,9 +50,7 @@ function Content(props) {
         <Grid justify="flex-start" item xs={6}>
           <div className="headingdiv">
             <p className="HomeTitleSmall">HEY WHATS UP,</p>
-            <Typography variant="h6" className="HomeTitle">
-              {props.Name}
-            </Typography>
+            <Typography variant='h6' className="HomeTitle">{props.Name}</Typography>
             {/* <p >{props.Name}</p> */}
           </div>
 
@@ -108,6 +106,8 @@ function Content(props) {
           </div>
         </Grid>
       </Grid>
+
+     
     </Container>
   );
 }

@@ -21,20 +21,9 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: ["Inter", "sans-serif"].join(","),
-    fontSize: 20,
+    fontSize: 100,
     h6: {
-      // ipad
       fontWeight: 900,
-      fontSize: 60,
-    },
-    h4: {
-      // desktop pc
-      fontWeight: 900,
-      fontSize: 90,
-    },
-    h5: {
-      fontWeight: 900,
-      fontSize: 30,
     },
   },
 });

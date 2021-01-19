@@ -23,12 +23,11 @@ const theme = createMuiTheme({
     fontFamily: ["Inter", "sans-serif"].join(","),
     fontSize: 20,
     h6: {
-      // ipad
       fontWeight: 900,
-      fontSize: 60,
+      fontSize: 70,
     },
     h4: {
-      // desktop pc
+      // normal pc
       fontWeight: 900,
       fontSize: 90,
     },

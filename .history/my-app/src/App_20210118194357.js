@@ -28,7 +28,7 @@ const theme = createMuiTheme({
       fontSize: 60,
     },
     h4: {
-      // desktop pc
+      // normal pc
       fontWeight: 900,
       fontSize: 90,
     },

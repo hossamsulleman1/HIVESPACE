@@ -79,31 +79,29 @@ function Content(props) {
           </div>
         </Grid>
         <Grid justify="flex-end" item xs={6}>
-          <div className="avatardiv">
-            {/* <Avatar className={classes.large} src={props.photoURL}>
+          {/* <Avatar className={classes.large} src={props.photoURL}>
               <FaceIcon></FaceIcon>
             </Avatar>
             <br/>
 <br/> */}
-            <div className="flexbox">
-              <ChipSet></ChipSet>
+          <div className="flexbox">
+            <ChipSet></ChipSet>
+          </div>
+
+          <div className="friendsdiv">
+            <div className="justifycenter">
+              <Divider className={classes.divider}></Divider>
+
+              <p className="SubHeading">ALL FRIENDS</p>
+              <Divider className={classes.divider}></Divider>
+              <br></br>
+              <Button>Add Friends</Button>
             </div>
 
-            <div className="friendsdiv">
-              <div className="justifycenter">
-                <Divider className={classes.divider}></Divider>
-
-                <p className="SubHeading">ALL FRIENDS</p>
-                <Divider className={classes.divider}></Divider>
-                <br></br>
-                <Button>Add Friends</Button>
-              </div>
-
-              <div className="friendsdiv2">
-                <Container>
-                  <FriendsAvatarList></FriendsAvatarList>
-                </Container>
-              </div>
+            <div className="friendsdiv2">
+              <Container>
+                <FriendsAvatarList></FriendsAvatarList>
+              </Container>
             </div>
           </div>
         </Grid>

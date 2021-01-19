@@ -1,6 +1,4 @@
-import { Typography } from "@material-ui/core";
-import { Container } from "@material-ui/core";
-
+import Typography from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
@@ -47,12 +45,10 @@ function Content(props) {
     <Container>
       <BottomAppBar></BottomAppBar>
       <Grid container spacing={3}>
-        <Grid justify="flex-start" item xs={6}>
+        <Grid item xs={6}>
           <div className="headingdiv">
             <p className="HomeTitleSmall">HEY WHATS UP,</p>
-            <Typography variant="h6" className="HomeTitle">
-              {props.Name}
-            </Typography>
+            <Typography className="HomeTitle">{props.Name}</Typography>
             {/* <p >{props.Name}</p> */}
           </div>
 
@@ -78,7 +74,7 @@ function Content(props) {
             </div>
           </div>
         </Grid>
-        <Grid justify="flex-end" item xs={6}>
+        <Grid item xs={6}>
           <div className="avatardiv">
             {/* <Avatar className={classes.large} src={props.photoURL}>
               <FaceIcon></FaceIcon>
@@ -108,6 +104,20 @@ function Content(props) {
           </div>
         </Grid>
       </Grid>
+
+      {/* GRAPHS CONTAINER  */}
+      <Container>
+        <p className="HomeTitleSmall">PERSONAL BLEND</p>
+        <Grid container spacing={3}>
+          <Grid item xs>
+            {/* <PieWithLabel></PieWithLabel> */}
+          </Grid>
+          <Grid item xs>
+            {/* <RadarChart></RadarChart> */}
+          </Grid>
+        </Grid>
+      </Container>
+      {/* GRAPHS CONTAINER END  */}
     </Container>
   );
 }

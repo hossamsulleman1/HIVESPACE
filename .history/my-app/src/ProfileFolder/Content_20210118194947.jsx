@@ -79,7 +79,7 @@ function Content(props) {
           </div>
         </Grid>
         <Grid justify="flex-end" item xs={6}>
-          <div className="avatardiv">
+         
             {/* <Avatar className={classes.large} src={props.photoURL}>
               <FaceIcon></FaceIcon>
             </Avatar>
@@ -105,7 +105,7 @@ function Content(props) {
                 </Container>
               </div>
             </div>
-          </div>
+          
         </Grid>
       </Grid>
     </Container>
