@@ -5,7 +5,7 @@
 // profile page change props to ur props (ur name and bio)
 // APP JS go to create const theme il just make a sign and show u and change the colours and even theme dark/light
 // responsive.jsx go to that file find element called chipset and change its url prop to a link of ur photo 
-// TO GET LINK FOR UR PHOTO GO TO DISCORD AND SEND A PIC OF UR FACE as a attachment AND COPY THE IMAGE LINK
+// TO GET LINK FOR UR PHOTO GO TO DISCORD AND SEND A PIC OF UR FACE AND COPY THE IMAGE LINK
 
 
 
