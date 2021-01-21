@@ -47,9 +47,10 @@ function Content(props) {
     <Container>
       <BottomAppBar></BottomAppBar>
       <Grid container spacing={3}>
-        <Grid justify="flex-start" item xs={6}>
+        <Grid justify="flex-start" item xs={12} sm>
           <div className="headingdiv">
             <p className="HomeTitleSmall">HEY WHATS UP,</p>
+            {/* home title is 100px and should be used on xl displays */}
             <Typography variant="h6" className="HomeTitle">
               {props.Name}
             </Typography>
@@ -78,7 +79,7 @@ function Content(props) {
             </div>
           </div>
         </Grid>
-        <Grid justify="flex-end" item xs={6}>
+        <Grid justify="flex-end" item  xs={12} sm={6}>
           <div className="avatardiv">
             {/* <Avatar className={classes.large} src={props.photoURL}>
               <FaceIcon></FaceIcon>
