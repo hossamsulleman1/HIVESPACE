@@ -9,7 +9,7 @@
 // FOR LIVE SERVER OPEN TERMINAL NOT IN CMD BUT ABOVE WHERE IT SAYS FILE EDIT ECT  AND TYPE AS BELOW EACH LINE IS NEW COMAND 
 // npm install -g npm-install-missing
 // cd my-app
-// npm-install-missing
+// npm install -i
 // npm start 
 
 

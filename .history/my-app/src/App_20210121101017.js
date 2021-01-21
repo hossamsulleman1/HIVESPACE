@@ -7,9 +7,8 @@
 // responsive.jsx go to that file find element called chipset and change its url prop to a link of ur photo 
 // TO GET LINK FOR UR PHOTO GO TO DISCORD AND SEND A PIC OF UR FACE as a attachment AND COPY THE IMAGE LINK
 // FOR LIVE SERVER OPEN TERMINAL NOT IN CMD BUT ABOVE WHERE IT SAYS FILE EDIT ECT  AND TYPE AS BELOW EACH LINE IS NEW COMAND 
-// npm install -g npm-install-missing
+// 
 // cd my-app
-// npm-install-missing
 // npm start 
 
 
