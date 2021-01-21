@@ -72,7 +72,7 @@ const theme = createMuiTheme({
 
 function App() {
   // const [authInfo, setAuthInfo] = useState();
-  
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <SemProvider>

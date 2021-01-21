@@ -30,6 +30,7 @@ import "./Css/CssCustom.css";
 import "./Css/Fonts.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
+
 // mix semptia with contact make like another page for revlout type creatiopn in inspo use auth info to grab info n that
 
 // CONTEXT API
@@ -72,7 +73,7 @@ const theme = createMuiTheme({
 
 function App() {
   // const [authInfo, setAuthInfo] = useState();
-  
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <SemProvider>
