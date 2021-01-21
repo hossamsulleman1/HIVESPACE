@@ -18,7 +18,7 @@ import AddIcon from "@material-ui/icons/Add";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import FabNav from "./FabNav";
-import SettingsIcon from "@material-ui/icons/Settings";
+import SettingsIcon from '@material-ui/icons/Settings';
 
 const messages = [
   {

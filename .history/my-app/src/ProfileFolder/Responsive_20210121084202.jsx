@@ -49,7 +49,7 @@ function Responsive(props) {
         <Grid container>
           <Grid item sm={6} xs={12}>
             {/* name grid */}
-            <Typography variant="h4">{props.Intro}</Typography>
+            <p className="HomeTitleSmall">The ONE and ONLY...</p>
             {/* home title is 100px and should be used on xl displays */}
             <Typography variant="h6">{props.Name}</Typography>
             {/* <p>UUID: 34702-324801</p> */}
@@ -58,7 +58,7 @@ function Responsive(props) {
 
           <Grid item xs={12} sm={6}>
             {/* avatar grid  */}
-            <ChipSet photoURL="https://media.discordapp.net/attachments/723843651071115324/801367766883500062/image1.jpg?width=507&height=676"></ChipSet>
+            <ChipSet photoURL=""></ChipSet>
           </Grid>
 
           <Divider className={classes.divider}></Divider>

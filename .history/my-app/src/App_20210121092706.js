@@ -22,10 +22,10 @@ const theme = createMuiTheme({
   palette: {
     type: "dark",
     primary: {
-      main: "#ffeb3b",
+      main: "#ffea00",
     },
     secondary: {
-      main: "#ffea00 ",
+      main: "#b2a300",
     },
   },
   typography: {

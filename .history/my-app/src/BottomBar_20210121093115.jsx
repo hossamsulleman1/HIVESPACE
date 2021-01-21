@@ -18,7 +18,6 @@ import AddIcon from "@material-ui/icons/Add";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import FabNav from "./FabNav";
-import SettingsIcon from "@material-ui/icons/Settings";
 
 const messages = [
   {
@@ -130,14 +129,14 @@ export default function BottomAppBar() {
       </Paper> */}
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="open drawer">
-            <SettingsIcon></SettingsIcon>
-          </IconButton>
+          {/* {/* <IconButton edge="start" color="inherit" aria-label="open drawer">
+            <MenuIcon />
+          </IconButton> */}
           <Fab color="secondary" aria-label="add" className={classes.fabButton}>
             <AddIcon />
           </Fab>
           <div className={classes.grow} />
-          {/* <IconButton color="inherit">
+          <IconButton color="inherit">
             <SearchIcon />
           </IconButton>
           <IconButton edge="end" color="inherit">

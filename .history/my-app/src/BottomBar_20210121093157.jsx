@@ -18,7 +18,6 @@ import AddIcon from "@material-ui/icons/Add";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import FabNav from "./FabNav";
-import SettingsIcon from "@material-ui/icons/Settings";
 
 const messages = [
   {
@@ -131,7 +130,7 @@ export default function BottomAppBar() {
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="open drawer">
-            <SettingsIcon></SettingsIcon>
+            <MenuIcon />
           </IconButton>
           <Fab color="secondary" aria-label="add" className={classes.fabButton}>
             <AddIcon />

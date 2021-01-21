@@ -9,8 +9,6 @@ import { config } from "./FirebaseAuth/Config";
 import "./Css/CssCustom.css";
 import "./Css/Fonts.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import yellow from "@material-ui/core/colors/yellow";
-import grey from "@material-ui/core/colors/grey";
 
 // mix semptia with contact make like another page for revlout type creatiopn in inspo use auth info to grab info n that
 
@@ -21,12 +19,6 @@ import { useState } from "react";
 const theme = createMuiTheme({
   palette: {
     type: "dark",
-    primary: {
-      main: "#ffeb3b",
-    },
-    secondary: {
-      main: "#ffea00 ",
-    },
   },
   typography: {
     h6: {
@@ -38,7 +30,7 @@ const theme = createMuiTheme({
     h4: {
       // desktop pc
       fontWeight: 900,
-      fontSize: "3.7vmin",
+      fontSize: "vmin",
       fontFamily: ["Inter", "sans-serif"].join(","),
     },
     h5: {

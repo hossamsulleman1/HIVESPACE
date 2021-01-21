@@ -49,7 +49,7 @@ function Responsive(props) {
         <Grid container>
           <Grid item sm={6} xs={12}>
             {/* name grid */}
-            <Typography variant="h4">{props.Intro}</Typography>
+            <Typography variant="h6">The ONE and ONLY...</p>
             {/* home title is 100px and should be used on xl displays */}
             <Typography variant="h6">{props.Name}</Typography>
             {/* <p>UUID: 34702-324801</p> */}
