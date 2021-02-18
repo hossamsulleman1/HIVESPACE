@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(30),
     height: theme.spacing(30),
   },
+  div: {
+    marginTop: "60px",
+  },
 }));
 
 function Responsive(props) {
@@ -49,7 +52,7 @@ function Responsive(props) {
         <Grid container>
           <Grid item sm={6} xs={12}>
             {/* name grid */}
-            <div className="paddingTop">
+            <div className={classes.div}>
               <Typography variant="h4">{props.Intro}</Typography>
               {/* home title is 100px and should be used on xl displays */}
             </div>
