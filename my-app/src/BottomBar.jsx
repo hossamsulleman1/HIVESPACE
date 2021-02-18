@@ -19,6 +19,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import FabNav from "./FabNav";
 import SettingsIcon from "@material-ui/icons/Settings";
+import Link from "@material-ui/core/Link";
+import LinkedCameraIcon from "@material-ui/icons/LinkedCamera";
 
 const messages = [
   {
@@ -133,8 +135,10 @@ export default function BottomAppBar() {
           <IconButton edge="start" color="inherit" aria-label="open drawer">
             <SettingsIcon></SettingsIcon>
           </IconButton>
+
           <Fab color="secondary" aria-label="add" className={classes.fabButton}>
             <AddIcon />
+            <Link to="/Connect"></Link>
           </Fab>
           <div className={classes.grow} />
           {/* <IconButton color="inherit">
@@ -143,6 +147,9 @@ export default function BottomAppBar() {
           <IconButton edge="end" color="inherit">
             <MoreIcon />
           </IconButton> */}
+          <IconButton edge="end" color="inherit">
+            <LinkedCameraIcon></LinkedCameraIcon>
+          </IconButton>
           <FabNav></FabNav>
         </Toolbar>
       </AppBar>

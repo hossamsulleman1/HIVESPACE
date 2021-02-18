@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "npm-install-missing": "^0.1.4",
+    "react-router-dom": "^5.2.0",
+    "react-social-icons": "^4.1.0"
+  }
+}

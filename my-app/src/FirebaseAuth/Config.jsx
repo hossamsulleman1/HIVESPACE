@@ -1,5 +1,5 @@
 // Firebase Config
-export  const config = {
+const config = {
   apiKey: "AIzaSyA18XI0uZ1LXDf6_p6NsPJ44ngPKNjNr8Q",
   projectId: "semptiareact",
   databaseURL: "https://semptiareact.firebaseio.com/",
@@ -8,7 +8,7 @@ export  const config = {
   // OPTIONAL
   storageBucket: "semptiareact.appspot.com",
   measurementId: "G-HSKLQN04DJ",
-};        
+};
 
 //   firebaseConfig = {
 //     apiKey: "AIzaSyA18XI0uZ1LXDf6_p6NsPJ44ngPKNjNr8Q",
@@ -19,4 +19,4 @@ export  const config = {
 //     messagingSenderId: "1024311609571",
 //     appId: "1:1024311609571:web:3c04bd435f8015d0769dd6",
 
-
+export default config;

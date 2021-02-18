@@ -4,6 +4,16 @@
   padding-top: 3%;
 }
 
+.PaddingTop {
+  margin-top: 30px;
+}
+
+.CenterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .draweravatar {
   display: flex;
   justify-content: center;
@@ -159,6 +169,7 @@
 .displayflex {
   display: flex;
 }
+
 .introparahome {
   float: left;
 }
@@ -181,6 +192,7 @@
 .floatleft {
   float: left;
 }
+
 .statsdiv {
   padding-top: 50px;
 }

@@ -1,7 +1,7 @@
 import React, { useState, createContext, useEffect } from "react";
 import DB from "./FirebaseAuth/DB";
 import fire from "./FirebaseAuth/fire";
-import config from "./FirebaseAuth/Config";
+import config from "./FirebaseAuth/config";
 
 export const SemContext = createContext();
 

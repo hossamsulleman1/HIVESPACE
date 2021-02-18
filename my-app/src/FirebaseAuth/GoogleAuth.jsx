@@ -7,41 +7,47 @@ import {
   IfFirebaseAuthed,
   IfFirebaseAuthedAnd,
 } from "@react-firebase/auth";
-import { config } from "./config";
+import config from "./Config";
+import GoogleButton from "react-google-button";
 
 // CONTEXT REACT
-import { SemContext } from "../../SemContext";
+import { SemContext } from "../SemContext";
 import React, { useContext } from "react";
 
 function GoogleAuth() {
   const WriteAuthInfo = (user) => {
     console.log("WRITE AUTH", user);
     setAuthInfo(user);
-
-    
-
   };
 
   const [authInfo, setAuthInfo] = useContext(SemContext);
   return (
     <FirebaseAuthProvider {...config} firebase={firebase}>
       <div>
-        <button
+        <GoogleButton
+          onClick={() => {
+            const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().signInWithPopup(googleAuthProvider);
+          }}
+        />
+
+        {/* <button
           onClick={() => {
             const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
             firebase.auth().signInWithPopup(googleAuthProvider);
           }}
         >
           Sign In with Google
-        </button>
-        <button
+        </button> */}
+        {/* <button
           data-testid="signin-anon"
           onClick={() => {
             firebase.auth().signInAnonymously();
           }}
         >
           Sign In Anonymously
-        </button>
+        </button> */}
+        <br />
         <button
           onClick={() => {
             firebase.auth().signOut();
@@ -53,8 +59,8 @@ function GoogleAuth() {
         <FirebaseAuthConsumer>
           {({ isSignedIn, user, providerId }) => {
             return (
-              <pre style={{ height: 300, overflow: "auto" }}>
-                {JSON.stringify({ isSignedIn, user, providerId }, null, 2)}
+              <pre>
+                {/* {JSON.stringify({ isSignedIn, user, providerId }, null, 2)} */}
 
                 {WriteAuthInfo(user)}
               </pre>
@@ -64,16 +70,16 @@ function GoogleAuth() {
 
         <div>
           <IfFirebaseAuthed>
-            {() => {
+            {/* {() => {
               return <div>You are authenticated</div>;
-            }}
+            }} */}
           </IfFirebaseAuthed>
           <IfFirebaseAuthedAnd
             filter={({ providerId }) => providerId !== "anonymous"}
           >
-            {({ providerId }) => {
+            {/* {({ providerId }) => {
               return <div>You are authenticated with {providerId}</div>;
-            }}
+            }} */}
           </IfFirebaseAuthedAnd>
         </div>
       </div>

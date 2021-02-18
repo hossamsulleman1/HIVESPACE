@@ -49,8 +49,11 @@ function Responsive(props) {
         <Grid container>
           <Grid item sm={6} xs={12}>
             {/* name grid */}
-            <Typography variant="h4">{props.Intro}</Typography>
-            {/* home title is 100px and should be used on xl displays */}
+            <div className="paddingTop">
+              <Typography variant="h4">{props.Intro}</Typography>
+              {/* home title is 100px and should be used on xl displays */}
+            </div>
+
             <Typography variant="h6">{props.Name}</Typography>
             {/* <p>UUID: 34702-324801</p> */}
             {/* make uuid modal in bottom bar not bottom bar on connect page show users uuid and be like connect with someonje elses uuid  */}

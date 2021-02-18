@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { SemContext } from '../SemContext';
-import config from "./Config";
+import config from "./config";
 import fire from "./fire";
 
 
