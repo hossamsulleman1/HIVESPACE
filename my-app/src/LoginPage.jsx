@@ -26,16 +26,17 @@ function LoginPage() {
   return (
     <Card className={classes.root}>
       <CardContent>
+        <img className={classes.logoMini} src="Favicon.svg" alt="" />
         <Typography gutterBottom variant="h5" component="h2">
-          Happening now
+          Log in to Hive
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
           Welcome home, or to your new home.
         </Typography>
-        {/* sign up button here */}
-        <br />
-        {/* <GoogleLogin></GoogleLogin> */}
-        <GoogleAuth></GoogleAuth>
+        <Button>sign up</Button>
+
+        <Button variant="outlined">Log in</Button>
+
         <Typography variant="body2" color="textSecondary">
           Subject to the Google{" "}
           <Link href="https://policies.google.com/privacy?hl=en ">
@@ -59,7 +60,7 @@ function LoginPage() {
   );
 }
 
-export default AuthPage;
+export default LoginPage;
 
 // privacy policy
 // https://policies.google.com/privacy?hl=en

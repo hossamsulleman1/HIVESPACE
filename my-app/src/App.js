@@ -25,13 +25,14 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import AddPage from "./AddPage";
 import AuthPage from "./AuthPage";
 import config from "./FirebaseAuth/Config";
+import LoginPage from "./LoginPage";
 
 // mix semptia with contact make like another page for revlout type creatiopn in inspo use auth info to grab info n that
 
 // CONTEXT API
 import { SemProvider } from "./SemContext";
 import { useState } from "react";
-import DB from './FirebaseAuth/DB';
+import DB from "./FirebaseAuth/DB";
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // HERE THIS IS WHERE U CHANGE COLOURS FOR THE APP BAR AND FAB AND COLOUR SHEME
@@ -66,34 +67,22 @@ const theme = createMuiTheme({
 });
 
 function App() {
-  // const [authInfo, setAuthInfo] = useState();
-
   return (
-    <ThemeProvider theme={theme}>
-      {/* <ProfilePage></ProfilePage>
-      <AddPage></AddPage> */}
-      <SemProvider>
-        <FirebaseAuthProvider firebase={firebase} {...config}>
+    <SemProvider>
+      <FirebaseAuthProvider firebase={firebase} {...config}>
+        <ThemeProvider theme={theme}>
           <Router>
-            {/* <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li> */}
             <Switch>
               <Route path="/Wave" component={ProfilePage} />
               <Route path="/Connect" component={AddPage} />
               <Route path="/Auth" component={AuthPage} />
               <Route path="/DB" component={DB} />
+              <Route path="/Login" component={LoginPage} />
             </Switch>
           </Router>
-        </FirebaseAuthProvider>
-      </SemProvider>
-    </ThemeProvider>
+        </ThemeProvider>
+      </FirebaseAuthProvider>
+    </SemProvider>
   );
 }
 

@@ -13,15 +13,23 @@ import GoogleAuth from "./FirebaseAuth/GoogleAuth";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import { Container } from "@material-ui/core";
+import Footer from "./Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexgrow: 1,
   },
   media: {
-    height: 140,
+    height: 200,
   },
   div: {
+    margin: 40,
+  },
+  center: {
+    marginLeft: 45,
+    marginBottom: 45,
+  },
+  margin: {
     margin: 40,
   },
 }));
@@ -33,16 +41,22 @@ function AuthPage() {
     <Container>
       <div className={classes.root}>
         <div>
-          <Typography gutterBottom variant="h5" component="h2">
-            Now is the time to be connected.
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Join hive today, give people the oportunity to explore.
-          </Typography>
+          <div className={classes.margin}>
+            <Typography gutterBottom variant="h5" component="h2">
+              Now is the time to be connected.
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Join hive today, give people the oportunity to explore.
+            </Typography>
+          </div>
+
           {/* sign up button here */}
           <br />
           {/* <GoogleLogin></GoogleLogin> */}
-          <GoogleAuth></GoogleAuth>
+          <div className={classes.center}>
+            <GoogleAuth></GoogleAuth>
+          </div>
+
           <Typography variant="body2" color="textSecondary">
             Subject to the Google{" "}
             <Link href="https://policies.google.com/privacy?hl=en ">
@@ -57,11 +71,12 @@ function AuthPage() {
         <div>
           <CardMedia
             className={classes.media}
-            image="https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png"
-            title="Semptia Login"
+            image="Favicon.svg"
+            title="Semptia Logo"
           />
         </div>
       </div>
+      <Footer></Footer>
     </Container>
   );
 }

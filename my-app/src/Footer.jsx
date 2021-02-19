@@ -1,9 +1,15 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import  Paper  from '@material-ui/core/Paper';
+
+
+
+
 
 function Footer() {
   return (
-    <Grid container>
+    <Paper>
+ <Grid container>
       <Grid item xs={12}>
         {/* logo with text */}
       </Grid>
@@ -30,6 +36,8 @@ function Footer() {
 
       <p>© 2021 Semptia UK</p>
     </Grid>
+    </Paper>
+   
   );
 }
 

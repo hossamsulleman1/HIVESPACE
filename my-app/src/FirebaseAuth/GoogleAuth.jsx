@@ -75,13 +75,13 @@ function GoogleAuth() {
           Sign In Anonymously
         </button> */}
         <br />
-        <button
+        {/* <button
           onClick={() => {
             firebase.auth().signOut();
           }}
         >
           Sign Out
-        </button>
+        </button> */}
 
         <FirebaseAuthConsumer>
           {({ isSignedIn, user, providerId }) => {
