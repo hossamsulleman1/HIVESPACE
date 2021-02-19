@@ -10,52 +10,59 @@ import Typography from "@material-ui/core/Typography";
 import GoogleLogin from "react-google-login";
 import { Link } from "react-router-dom";
 import GoogleAuth from "./FirebaseAuth/GoogleAuth";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import { Container } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    flexgrow: 1,
   },
   media: {
     height: 140,
   },
-});
+  div: {
+    margin: 40,
+  },
+}));
 
 function AuthPage() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
-          Now is the time to be connected.
-        </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
-          Join hive today, give people the oportunity to explore.
-        </Typography>
-        {/* sign up button here */}
-        <br />
-        {/* <GoogleLogin></GoogleLogin> */}
-        <GoogleAuth></GoogleAuth>
-        <Typography variant="body2" color="textSecondary" >
-          Subject to the Google{" "}
-          <Link href="https://policies.google.com/privacy?hl=en ">
-            Privacy Policy{" "}
-          </Link>{" "}
-          and{" "}
-          <Link href="https://policies.google.com/terms?hl=en">
-            Terms of Service.
-          </Link>
-        </Typography>
-        {/* hyper link terms of service and that jsut go on adobe where they use google auth and link
-         */}
-      </CardContent>
-      <CardMedia
-        className={classes.media}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="Semptia Login"
-      />
-      {/* foooter */}
-    </Card>
+    <Container>
+      <div className={classes.root}>
+        <div>
+          <Typography gutterBottom variant="h5" component="h2">
+            Now is the time to be connected.
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Join hive today, give people the oportunity to explore.
+          </Typography>
+          {/* sign up button here */}
+          <br />
+          {/* <GoogleLogin></GoogleLogin> */}
+          <GoogleAuth></GoogleAuth>
+          <Typography variant="body2" color="textSecondary">
+            Subject to the Google{" "}
+            <Link href="https://policies.google.com/privacy?hl=en ">
+              Privacy Policy{" "}
+            </Link>{" "}
+            and{" "}
+            <Link href="https://policies.google.com/terms?hl=en">
+              Terms of Service.
+            </Link>
+          </Typography>
+        </div>
+        <div>
+          <CardMedia
+            className={classes.media}
+            image="https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png"
+            title="Semptia Login"
+          />
+        </div>
+      </div>
+    </Container>
   );
 }
 

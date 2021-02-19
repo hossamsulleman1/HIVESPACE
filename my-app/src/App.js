@@ -31,6 +31,7 @@ import config from "./FirebaseAuth/Config";
 // CONTEXT API
 import { SemProvider } from "./SemContext";
 import { useState } from "react";
+import DB from './FirebaseAuth/DB';
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // HERE THIS IS WHERE U CHANGE COLOURS FOR THE APP BAR AND FAB AND COLOUR SHEME
@@ -87,6 +88,7 @@ function App() {
               <Route path="/Wave" component={ProfilePage} />
               <Route path="/Connect" component={AddPage} />
               <Route path="/Auth" component={AuthPage} />
+              <Route path="/DB" component={DB} />
             </Switch>
           </Router>
         </FirebaseAuthProvider>

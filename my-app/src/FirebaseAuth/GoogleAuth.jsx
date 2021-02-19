@@ -9,20 +9,47 @@ import {
 } from "@react-firebase/auth";
 import config from "./Config";
 import GoogleButton from "react-google-button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
 
 // CONTEXT REACT
 import { SemContext } from "../SemContext";
 import React, { useContext } from "react";
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 function GoogleAuth() {
   const WriteAuthInfo = (user) => {
     console.log("WRITE AUTH", user);
     setAuthInfo(user);
+    // handleClick();
   };
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const [open, setOpen] = React.useState(false);
 
   const [authInfo, setAuthInfo] = useContext(SemContext);
   return (
     <FirebaseAuthProvider {...config} firebase={firebase}>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success">
+          Welcome 
+        </Alert>
+      </Snackbar>
+
       <div>
         <GoogleButton
           onClick={() => {
