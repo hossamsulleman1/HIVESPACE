@@ -4,3 +4,4 @@ npm i @material-ui/lab
 npm install @material-ui/core
 npm i react-google-login
 npm i react-google-button
+npm i qrcode.react

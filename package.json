@@ -2,6 +2,8 @@
   "dependencies": {
     "build": "^0.1.4",
     "npm-install-missing": "^0.1.4",
+    "qrcode.react": "^1.0.1",
+    "react-qr-code": "^1.0.5",
     "react-router-dom": "^5.2.0",
     "react-social-icons": "^4.1.0"
   }

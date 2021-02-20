@@ -78,6 +78,7 @@ function App() {
               <Route path="/Auth" component={AuthPage} />
               <Route path="/DB" component={DB} />
               <Route path="/Login" component={LoginPage} />
+              
             </Switch>
           </Router>
         </ThemeProvider>
