@@ -43,13 +43,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 35,
     padding: 20,
     paddingLeft: 40,
-    paddingRight:40,
+    paddingRight: 40,
   },
   FabAdd: {
     marginTop: 35,
     padding: 20,
     paddingLeft: 40,
-    paddingRight:60,
+    paddingRight: 60,
   },
 }));
 
@@ -95,13 +95,8 @@ function AddPage(props) {
                     className={classes.FabAdd}
                   >
                     <GroupAddIcon></GroupAddIcon>
-                    
-                    <Typography className={classes.ButtonText}>
-                    ADD
-                    </Typography>
 
-                    
-                   
+                    <Typography className={classes.ButtonText}>ADD</Typography>
                   </Fab>
 
                   {/* qr code  */}
@@ -121,10 +116,8 @@ function AddPage(props) {
                     <VpnKeyIcon></VpnKeyIcon>
 
                     <Typography className={classes.ButtonText}>
-                    Log in
+                      Log in
                     </Typography>
-
-                    
                   </Fab>
 
                   <Typography className={classes.subheader} variant="h4">
@@ -141,9 +134,8 @@ function AddPage(props) {
                     <FiberNewIcon></FiberNewIcon>
 
                     <Typography className={classes.ButtonText}>
-                    Sign Up
+                      Sign Up
                     </Typography>
-                    
                   </Fab>
                 </Grid>
 
