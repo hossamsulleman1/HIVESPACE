@@ -50,7 +50,7 @@ const theme = createMuiTheme({
     h6: {
       // ipad / phone
       fontWeight: 900,
-      fontSize: "13vmin",
+      fontSize: "10vmin",
       fontFamily: ["Inter", "sans-serif"].join(","),
     },
     h4: {
@@ -73,12 +73,11 @@ function App() {
         <ThemeProvider theme={theme}>
           <Router>
             <Switch>
-              <Route path="/Wave" component={ProfilePage} />
+              <Route exact path="/" component={ProfilePage} />
               <Route path="/Connect" component={AddPage} />
               <Route path="/Auth" component={AuthPage} />
               <Route path="/DB" component={DB} />
               <Route path="/Login" component={LoginPage} />
-              
             </Switch>
           </Router>
         </ThemeProvider>

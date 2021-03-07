@@ -16,6 +16,7 @@ import BottomAppBar from "../BottomBar";
 import ChipSet from "../ChipSet";
 import SocialCard from "../SocialCard";
 import UserChip from "../UserChip";
+import TunedGrid from './TunedGrid';
 
 const useStyles = makeStyles((theme) => ({
   divider: {
@@ -82,11 +83,11 @@ function Responsive(props) {
             {/* <Divider className={classes.divider}></Divider> */}
 
             <div className="statsdiv">
-              <p className="HomeTitleMedium">Connect With</p>
+              <p className="HomeTitleMedium">Current News</p>
               <br></br>
               <br></br>
               <div className="chipset">
-                <UserChip></UserChip>
+               <TunedGrid/>
                 <br></br>
               </div>
             </div>
